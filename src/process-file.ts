@@ -143,15 +143,7 @@ async function processFiles (files): Promise<void> {
       optimizerButteraugliTarget: 1.4,
       maxOptimizerRounds: 6
     }
-    // for (const encName of Object.keys(encoders)) {
-    //   if (!program.opts()[encName]) {
-    //     continue
-    //   }
-    //   const encParam = program.opts()[encName]
-    //   const encConfig =
-    //     encParam.toLowerCase() === 'auto' ? 'auto' : JSON5.parse(encParam)
-    //   encodeOptions[encName] = encConfig
-    // }
+
     jobsStarted++
     const job = image.encode(encodeOptions).then(async () => {
       jobsFinished++
