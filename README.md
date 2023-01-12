@@ -22,7 +22,7 @@ jobs:
   my_bot_job:
     runs-on: ubuntu-latest
     steps:
-      - uses: philongn/image-optimization@v1.0.0
+      - uses: evansnguyen/image-optimization@v1.0.0
         with:
           token: ${{ secrets.ACCESS_TOKEN }}
           file: 'assets'
