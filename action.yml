@@ -1,0 +1,34 @@
+name: 'Image Optimization'
+description: 'Creates a pull request to optimize images in your repo'
+inputs:
+  token:
+    description: 'GITHUB_TOKEN or a `repo` scoped Personal Access Token (PAT)'
+    default: ${{ github.token }}
+  file:
+    description: >
+      Relative path under $GITHUB_WORKSPACE to the repository.
+      Defaults to $GITHUB_WORKSPACE.
+  branch:
+    description: 'The branch to scan when optimizing images.'
+    default: 'staging'
+  commit-branch:
+    description: 'The branch to use when committing optimized images.'
+  commit-message:
+    description: 'The message to use when committing changes.'
+    default: '[image-optimization] automated change'
+  committer:
+    description: >
+      The committer name and email address in the format `Display Name <email@address.com>`.
+      Defaults to the GitHub Actions bot user.
+    default: 'GitHub <noreply@github.com>'
+  dryrun:
+    description: 'If true, no changes will be made to the repo'
+    default: false
+    required: false
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+branding:
+  icon: 'git-pull-request'
+  color: 'gray-dark'
