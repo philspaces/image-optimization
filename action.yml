@@ -1,5 +1,5 @@
 name: 'Image Optimization'
-description: 'Creates a pull request to optimize images in your repo'
+description: 'Optimizing images in your repo'
 inputs:
   token:
     description: 'GITHUB_TOKEN or a `repo` scoped Personal Access Token (PAT)'
