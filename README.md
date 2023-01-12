@@ -41,14 +41,6 @@ jobs:
 - `test` - run tests,
 - `test:watch` - interactive watch mode to automatically re-run tests
 
-### ES Modules
-
-This template uses native [ESM][esm]. Make sure to read [this][nodejs-esm], and [this][ts47-esm] first.
-
-If your project requires CommonJS, you will have to [convert to ESM][sindresorhus-esm].
-
-Please do not open issues for questions regarding CommonJS or ESM on this repo.
-
 
 [ts-badge]: https://img.shields.io/badge/TypeScript-4.9-blue.svg
 [nodejs-badge]: https://img.shields.io/badge/Node.js->=%2018.12-blue.svg
